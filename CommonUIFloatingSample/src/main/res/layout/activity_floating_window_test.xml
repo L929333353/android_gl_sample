@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FloatingWindowTestActivity">
+
+    <Switch
+        android:visibility="gone"
+        android:id="@+id/switch_model"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Model Window" />
+
+    <Switch
+        android:id="@+id/switch_global"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Global" />
+
+    <EditText
+        android:id="@+id/edit_x"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="X"
+        android:inputType="numberSigned"
+        android:text="10" />
+
+    <EditText
+        android:id="@+id/edit_y"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Y"
+        android:inputType="numberSigned"
+        android:text="10" />
+
+    <EditText
+        android:id="@+id/edit_width"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="width"
+        android:inputType="number"
+        android:text="300" />
+
+    <EditText
+        android:id="@+id/edit_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="height"
+        android:inputType="number"
+        android:text="300" />
+
+    <Switch
+        android:id="@+id/switch_interact_with_im"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="interact with IM" />
+
+    <Switch
+        android:id="@+id/switch_cover_bars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="cover bars" />
+
+    <EditText
+        android:id="@+id/edit_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:enabled="false"
+        android:text="HOVER" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_hover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hover" />
+
+        <Button
+            android:id="@+id/btn_corner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Corner" />
+
+        <Button
+            android:id="@+id/btn_border"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Border" />
+
+        <Button
+            android:id="@+id/btn_border_hori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Border Horizon" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <EditText
+            android:id="@+id/edit_bounding_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="上边界"
+            android:text="50"
+            android:inputType="numberSigned"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:id="@+id/edit_bounding_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="左边界"
+            android:text="50"
+            android:inputType="numberSigned"
+            android:layout_alignParentLeft="true"
+            />
+
+        <EditText
+            android:id="@+id/edit_bounding_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="右边界"
+            android:text="50"
+            android:inputType="numberSigned"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <EditText
+            android:id="@+id/edit_bounding_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="下边界"
+            android:text="50"
+            android:inputType="numberSigned"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show" />
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update" />
+</LinearLayout>
